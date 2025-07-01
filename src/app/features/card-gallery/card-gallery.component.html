@@ -1,0 +1,14 @@
+<section class="py-5" id="portfolio">
+  <div class="container px-4 px-lg-5">
+    <div class="row g-4">
+      <div class="col-lg-3 col-sm-6" *ngFor="let item of portfolioItems">
+        <a class="portfolio-box" [title]="item.title">
+          <img class="img-fluid rounded-3" [src]="item.src" [alt]="item.alt"  />
+          <div class="portfolio-box-caption">
+            <div class="project-name">{{ item.title }}</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg fixed-top pt-3 shadow bg-white mb-5" id="nav">
+  <div class="container px-4 px-lg-5 d-flex align-items-center">
+    <!-- Logo -->
+    <a class="navbar-brand" routerLink="/">
+      <img [src]="logoImg" alt="logo" class="img-fluid rounded-3">
+    </a>
+
+    <!-- Toggler per mobile -->
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" routerLink="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/about-us">Chi Siamo</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/our-services">Servizi</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" routerLink="/photos">Galleria</a></li> -->
+        <li class="nav-item"><a class="nav-link" routerLink="/contacts">Contatti</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/credits-dev">Credits to RJ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+

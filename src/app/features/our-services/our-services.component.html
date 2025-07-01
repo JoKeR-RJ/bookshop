@@ -1,0 +1,17 @@
+    <div class="bg-light pt-5 pb-2" id="services">
+      <div class="container px-4 px-lg-5">
+        <!-- <h2 class="fw-bold text-center mb-4 pt-5">I Nostri Servizi</h2> -->
+        <hr class="border-dark w-25 mx-auto mb-4" />
+        <div class="row gx-4 gx-lg-5 text-center justify-content-center pt-5">
+          <div *ngFor="let service of services" class="col-lg-3 col-md-6 mb-1 pb-4">
+            <div class="p-4 shadow-sm rounded bg-white h-100 service-card">
+              <i [class]="service.icon" [ngClass]="service.iconColor" class="fs-1 mb-3 icon-hover"></i>
+              <h3 class="h5 fw-bold mb-2">{{ service.title }}</h3>
+              <p class="text-muted" [innerHTML]="service.description"></p>
+              <a *ngIf="service.isLink" [href]="service.buttonLink" class="btn btn-{{service.buttonColor}} btn-hover rounded-5">{{ service.buttonText }}</a>
+              <button *ngIf="!service.isLink" class="btn btn-{{service.buttonColor}} btn-hover rounded-5 ">{{ service.buttonText }}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
